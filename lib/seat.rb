@@ -12,4 +12,8 @@ class Seat
     @booked = false
   end
 
+  def book_seat
+    @booked = true
+  end
+
 end

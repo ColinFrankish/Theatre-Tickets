@@ -8,4 +8,7 @@ describe 'Seat' do
     expect(seat).not_to be_booked
   end
 
+  it 'should be able to be booked' do
+    expect(seat.book_seat).to be true
+  end
 end
