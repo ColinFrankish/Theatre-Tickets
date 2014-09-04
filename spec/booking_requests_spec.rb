@@ -7,4 +7,8 @@ describe 'BookingRequests' do
   it 'should access a file of booking requests' do
     expect(booking_requests.access_requests).to include("(0,89:13,89:13),\n")
   end
+
+  it 'should remove unnecessary punctiation from booking requests' do 
+    expect(booking_requests.extract_data).to include(["0", "89", "13", "89", "13"])
+  end
 end
