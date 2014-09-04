@@ -11,4 +11,9 @@ describe 'BookingRequests' do
   it 'should remove unnecessary punctiation from booking requests' do 
     expect(booking_requests.extract_data).to include(["0", "89", "13", "89", "13"])
   end
+
+  it 'should convert each request to integer values' do 
+    expect(booking_requests.requests).to include([0,89,13,89,13])
+  end
+
 end
