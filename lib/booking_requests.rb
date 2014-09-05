@@ -9,11 +9,11 @@ class BookingRequests
   end
 
 # nested mapping not ideal..
-  def requests
+  def output_requests
     extract_data.map do |request| 
       request.collect{ |string| string.to_i} 
     end
   end
 
-  
+
 end

@@ -12,8 +12,8 @@ describe 'BookingRequests' do
     expect(booking_requests.extract_data).to include(["0", "89", "13", "89", "13"])
   end
 
-  it 'should convert each request to integer values' do 
-    expect(booking_requests.requests).to include([0,89,13,89,13])
+  it 'should convert each request to integer values in an array' do 
+    expect(booking_requests.output_requests).to include([0,89,13,89,13])
   end
 
 end
